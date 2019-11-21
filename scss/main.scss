@@ -16,6 +16,19 @@ $header-height:100vh;
     background: $primary-color;
     color: set-text-color($primary-color);
 }
+// actiing css
+.acting-header{
+    background: url(../img/Facetune_19-11-2019-20-27-29.jpg);
+    background-size:cover;
+    background-position:center;
+    height: $header-height;
+    min-height: 1900px;
+    position:relative;
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 15px solid transparent;
+
+}
+// acting css
 
 .main-header {
     background: $header-bg;
@@ -31,7 +44,8 @@ $header-height:100vh;
         margin:0;
         padding-top: 30px;
         color:whitesmoke;
-        font-family: 'Righteous', cursive;
+        font-family: 'Kaushan Script', cursive;
+        position:fixed;
     }
     a{
         font-family: 'Righteous', cursive;
@@ -95,4 +109,14 @@ $header-height:100vh;
 .row-2,
 .row-3 {
     opacity:0;
+}
+
+h1{
+    margin:0;
+    padding-top: 30px;
+    color:whitesmoke;
+    font-family: 'Righteous', cursive;
+}
+.right{
+    padding-right: 32px;
 }
