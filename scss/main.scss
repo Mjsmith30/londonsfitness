@@ -1,0 +1,98 @@
+@import "./materialize";
+
+// vars
+$header-bg: url(../img/Facetune_16-08-2019-11-12-41.jpg);
+$header-height:100vh;
+// test color function
+@function set-text-color($color){
+    @if(lightness($color) > 50) {
+        @return black;
+    }
+            @else {
+                @return white;
+            }
+        }
+    body {
+    background: $primary-color;
+    color: set-text-color($primary-color);
+}
+
+.main-header {
+    background: $header-bg;
+    background-size:cover;
+    background-position:center;
+    height: $header-height;
+    min-height: 1900px;
+    position:relative;
+    font-family: 'Kaushan Script', cursive;
+    border-bottom: 15px solid transparent;
+
+    h1{
+        margin:0;
+        padding-top: 30px;
+        color:whitesmoke;
+        font-family: 'Righteous', cursive;
+    }
+    a{
+        font-family: 'Righteous', cursive;
+
+        ;
+    }
+    h5 {
+        color:whitesmoke;
+        font-family: 'Kaushan Script', cursive;
+    }
+    
+}
+    h5 {
+        color:whitesmoke;
+        font-family: 'Kaushan Script', cursive;
+}
+    p {
+        color:whitesmoke;
+        font-family: 'Kaushan Script', cursive; 
+}
+.primary-overlay {   
+    background: rgba(75, 74, 74, 0.3); 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.img-content {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:300px;
+
+}
+
+.card-content{
+    color: orange;
+}
+
+.page-footer{
+    background-color: $secondary-color;
+    .footer-copyright{
+        background: $secondary-color-light;
+    }
+}
+
+.modal{
+    color:#333;
+}
+.material-icons {
+    text-rendering: optimizeLegibility;
+    font-feature-settings: 'liga';
+    color:orange;
+}
+
+.row-1,
+.row-2,
+.row-3 {
+    opacity:0;
+}
