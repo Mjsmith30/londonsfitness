@@ -6863,7 +6863,7 @@ body {
     padding-top: 30px;
     color: whitesmoke;
     font-family: 'Kaushan Script', cursive;
-    position: fixed; }
+    position: absolute; }
   .main-header a {
     font-family: 'Righteous', cursive; }
   .main-header h5 {
